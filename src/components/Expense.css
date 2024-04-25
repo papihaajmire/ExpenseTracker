@@ -1,0 +1,131 @@
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(315deg, rgb(122, 216, 180) 3%, rgb(58, 107, 156) 38%, rgb(73, 199, 191) 68%, rgb(180, 108, 162) 98%);
+  animation: gradient 5s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+/* .all {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+} */
+
+/* .all:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+} */
+
+.all:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+} 
+
+@keyframes wave {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(-25%);
+  }
+
+  50% {
+      transform: translateX(-50%);
+  }
+
+  75% {
+      transform: translateX(-25%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+}
+h1{
+  color: darkblue;
+  font-weight: bold;
+  font-size: 40px;
+}
+.form{
+  height: 400px;
+  width: 30%;
+  margin: 20px;
+background-color: rgb(157, 200, 219);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 2px 5px 2px rgb(1, 43, 99);
+}
+.saving{
+  /* border: 1px solid black ; */
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  height:100px;
+  width:350px;
+  box-shadow: 2px 2px 2px 2px rgb(39, 39, 192);
+  background-color: rgb(157, 200, 219);
+}
+.expense{
+  width: 50%;
+  margin: 20px;
+  padding: 20px;
+  /* border:1px solid black; */
+  border-radius: 10px;
+  background-color: rgb(157, 200, 219);
+  box-shadow: 5px 2px 5px 2px rgb(5, 3, 92);
+}
+.all{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+ 
+}
+.sal{
+  color: rgb(14, 14, 100);
+  font-weight: bold;
+
+}
+.table{
+  border: 1px solid black;
+}
+@media only screen and (max-width: 500px) {
+  .all{
+    display: block;
+  }
+  .form{
+    width: auto;
+  }
+  .expense{
+    margin-top: 30px;
+    width: auto;
+  }
+  .saving{
+    width: auto;
+  }
+}
